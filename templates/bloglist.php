@@ -23,7 +23,7 @@ get_header();
             $query -> the_post();
             echo '<a href="'.get_permalink().'" class="news__post-link">';
               echo '<h3 class="news__post-title">'.get_the_title().'</h3>';
-              echo '<p class="news__post-excerpt">'.wp_trim_words( get_the_content() , '20' ).'</p>';
+              echo '<p class="news__post-excerpt">'.wp_trim_words( get_the_content() , '15' ).'</p>';
             echo '</a>';
           } // endwhile;
         ?>
