@@ -1,0 +1,41 @@
+.bloglist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  // @media (max-width: 704px) {
+  //   grid-template-columns: 1fr;
+  // }
+
+  &__pagination {
+    margin-top: 50px;
+    border: 1px solid #d6dbe2;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0;
+
+    .page-numbers {
+      display: inline-block;
+      padding: 5px 12px;
+      height: 34px;
+      text-decoration: none;
+      border-right: 1px solid #d6dbe2;
+      font-size: 16px;
+
+      &.next,
+      &.current {
+        border-right: none;
+      }
+    }
+
+    span.page-numbers {
+      background: $color__blue;
+      color: #fff;
+    }
+
+    svg {
+      width: 16px;
+    }
+  }
+}
