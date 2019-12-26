@@ -15,7 +15,7 @@ get_header();
           $currentPage = get_query_var('paged');
           $args = array(
             'post_status' => 'publish',
-            'posts_per_page' => 1,
+            'posts_per_page' => 8,
             'paged' => $currentPage
           );
           $query = new WP_Query( $args );
