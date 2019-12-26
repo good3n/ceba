@@ -77,7 +77,7 @@ function ceba_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'ceba_content_width', 665 );
+	$GLOBALS['content_width'] = apply_filters( 'ceba_content_width', 705 );
 }
 add_action( 'after_setup_theme', 'ceba_content_width', 0 );
 
@@ -85,14 +85,9 @@ add_action( 'after_setup_theme', 'ceba_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function ceba_scripts() {
-	wp_enqueue_style( 'ceba-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'ceba-style', get_template_directory_uri().'/assets/styles/style.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'ceba_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -107,7 +102,7 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.

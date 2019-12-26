@@ -14,10 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-      &copy; 2019 Clarkston Estates Beach Association
-      Website by <a href="https://tomgooden.net/">Tom Gooden Web Development</a>
-		</div><!-- .site-info -->
+    <div class="container">
+      &copy; <?= date('Y'); ?> Clarkston Estates Beach Association
+      <!-- Website by <a href="https://tomgooden.net/">Tom Gooden Web Development</a> -->
+		</div><!-- /.container -->
 	</footer><!-- #colophon -->
   
 </div><!-- #page -->

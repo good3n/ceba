@@ -1,0 +1,14 @@
+// global
+@import "./global/normalize";
+@import "./global/variables";
+@import "./global/global";
+@import "./global/typography";
+@import "./global/links";
+@import "./global/layout";
+
+// components
+@import "./components/header";
+@import "./components/footer";
+
+// templates
+@import "./templates/home/home";

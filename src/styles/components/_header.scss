@@ -1,0 +1,21 @@
+.main-navigation {
+  padding: 50px 0;
+  font-weight: 500;
+  color: #000;
+  font-size: 1.8rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 30px 0 0;
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}

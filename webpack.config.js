@@ -3,9 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-// const imageminMozjpeg = require('imagemin-mozjpeg');
-// const ImageminPlugin = require('imagemin-webpack-plugin').default;
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const siteName = 'clarkstonestates'; // site name
 const userName = 'tom'; // macOS user name
 
@@ -76,29 +76,29 @@ module.exports = {
   },
   plugins: [
     // clean out build directories on each build
-    // new CleanWebpackPlugin(['./js/build/*', './css/build/*']),
+    // new CleanWebpackPlugin(['./assets/*']),
     // extract css into dedicated file
     new MiniCssExtractPlugin({
       filename: './styles/style.min.css'
     }),
     // copy images folder and optimize all the images
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: 'images/**/**',
-    //     to: path.resolve(__dirname, './assets')
-    //   }
-    // ]),
-    // new ImageminPlugin({
-    //   pngquant: {
-    //     quality: '75-85'
-    //   },
-    //   plugins: [
-    //     imageminMozjpeg({
-    //       quality: 70,
-    //       progressive: true
-    //     })
-    //   ]
-    // }),
+    new CopyWebpackPlugin([
+      {
+        from: 'images/**/**',
+        to: path.resolve(__dirname, './assets')
+      }
+    ]),
+    new ImageminPlugin({
+      pngquant: {
+        quality: '75-85'
+      },
+      plugins: [
+        imageminMozjpeg({
+          quality: 70,
+          progressive: true
+        })
+      ]
+    }),
     new BrowserSyncPlugin({
       proxy: 'https://' + siteName + '.test',
       host: siteName + '.test',
