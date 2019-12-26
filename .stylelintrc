@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-wordpress/scss",
+  "plugins": ["stylelint-order"],
+  "ignoreFiles": "./src/styles/bootstrap/**",
+  "rules": {
+    "max-line-length": 120,
+    "indentation": 2,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null
+  }
+}
