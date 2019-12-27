@@ -1,0 +1,40 @@
+@media (max-width: 704px) {
+  #site-navigation {
+    display: grid;
+    padding: 20px 0;
+  }
+
+  #nav-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color__sand, 0.97);
+    z-index: 998;
+
+    &.is-active {
+      display: block;
+    }
+
+    ul {
+      display: block;
+      margin-top: 100px;
+      padding: 20px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    li {
+      display: block;
+      margin-bottom: 10px;
+
+      &.button {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

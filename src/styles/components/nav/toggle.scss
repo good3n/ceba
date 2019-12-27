@@ -1,0 +1,92 @@
+#nav-toggle {
+  font: inherit;
+  display: none;
+  overflow: visible;
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: 0.15s;
+  transition-property: opacity, filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  z-index: 999;
+
+  @media (max-width: 704px) {
+    display: inline-block;
+    justify-self: end;
+  }
+
+  .box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  .inner {
+    top: 2px;
+  }
+
+  .inner,
+  .inner::before,
+  .inner::after {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #000;
+  }
+
+  .inner::before {
+    display: block;
+    content: "";
+    top: 10px;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #000;
+  }
+
+  .inner::after {
+    display: block;
+    content: "";
+    top: 20px;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #000;
+  }
+
+  &.is-active {
+    .inner {
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+      // background-color: #fff;
+
+      &::before {
+        transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+        opacity: 0;
+        // background-color: #fff;
+      }
+
+      &::after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg);
+        // background-color: #fff;
+      }
+    }
+  }
+}

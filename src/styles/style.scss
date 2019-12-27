@@ -5,11 +5,14 @@
 @import "./global/typography";
 @import "./global/links";
 @import "./global/layout";
+@import "./global/tribe";
 
 // components
 @import "./components/header";
+@import "./components/nav/nav";
 @import "./components/footer";
 
 // templates
 @import "./templates/home/home";
 @import "./templates/bloglist/bloglist";
+@import "./templates/page";

@@ -12,7 +12,10 @@ get_header();
 
      <?php
         get_template_part('template-parts/home/home', 'intro');
-        get_template_part('template-parts/home/home', 'news');
+        echo '<div class="news-events">';
+          get_template_part('template-parts/home/home', 'news');
+          get_template_part('template-parts/home/home', 'events');
+        echo '</div>';
         get_template_part('template-parts/home/home', 'info');
       ?>
 

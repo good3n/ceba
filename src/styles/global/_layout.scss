@@ -3,4 +3,8 @@
   max-width: 705px;
   margin: 0 auto;
   padding: 0 20px;
+
+  &.cal-container {
+    max-width: 1000px;
+  }
 }

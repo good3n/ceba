@@ -7,8 +7,8 @@
 
 <section class="news">
   <div class="container">
-    <h2 class="news__title">News &amp; Events</h2><!-- /.news__title -->
-    <a href="<?php echo get_home_url().'/news-events/' ?>" class="news__link">View All</a><!-- /.news__link -->
+    <h2 class="news__title">Latest Association News</h2><!-- /.news__title -->
+    <a href="<?php echo get_home_url().'/news-events/' ?>" class="news__link">View All News</a><!-- /.news__link -->
     <div class="news__posts">
       <?php
         $args = array(

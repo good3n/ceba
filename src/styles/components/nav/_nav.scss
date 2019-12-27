@@ -1,0 +1,48 @@
+.main-navigation {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.8rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-columns: auto;
+  }
+
+  li {
+    margin: 0;
+    display: inline-block;
+    grid-row: 1 / 2;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .button {
+    margin-right: 0;
+    justify-self: end;
+
+    a {
+      background: $color__blue;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: $color__blue--light;
+      }
+    }
+  }
+}
+
+@import "./toggle";
+@import "./responsive";
