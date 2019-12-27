@@ -3,9 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 
-  // @media (max-width: 704px) {
-  //   grid-template-columns: 1fr;
-  // }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 
   &__pagination {
     margin-top: 50px;

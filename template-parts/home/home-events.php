@@ -22,7 +22,7 @@
           'posts_per_page' => 2
         ]);
         foreach ( $events as $event ) {
-          echo '<a href="'.$event->post_link.'" class="events__post-link">';
+          echo '<a href="/event/'.$event->post_name.'" class="events__post-link">';
             echo '<h3 class="events__post-title">'.$event->post_title.'</h3>';
             echo '<p class="events__post-excerpt">'.tribe_get_start_date( $event ).'</p>';
           echo '</a>';
