@@ -74,10 +74,12 @@
   <script>
     const toggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('nav-wrap');
+    const body = document.querySelector('body');
     
     toggle.addEventListener('click', function() {
       toggle.classList.toggle('is-active');
       nav.classList.toggle('is-active');
+      body.classList.toggle('is-active');
     })
   </script>
 
