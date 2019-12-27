@@ -14,13 +14,26 @@
     background: rgba($color__sand, 0.97);
     z-index: 998;
 
+    &::after {
+      content: "";
+      height: 50vh;
+      width: 100vw;
+      background: url("/wp-content/themes/ceba/assets/images/sun.svg") top left no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: -30px;
+      z-index: -1;
+    }
+
     &.is-active {
       display: block;
     }
 
     ul {
       display: block;
-      margin-top: 100px;
+      margin-top: 70px;
       padding: 20px;
       text-align: center;
       font-size: 3rem;
