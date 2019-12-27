@@ -18,7 +18,7 @@
     <div class="events__posts">
       <?php
         $events = tribe_get_events([
-          // 'start_date' => 'now',
+          'start_date' => 'now',
           'posts_per_page' => 2
         ]);
         foreach ( $events as $event ) {

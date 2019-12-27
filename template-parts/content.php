@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				ceba_posted_on();
-				ceba_posted_by();
+				// ceba_posted_on();
+				// ceba_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php ceba_post_thumbnail(); ?>
+	<?php // ceba_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
