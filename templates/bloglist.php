@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: News & Event List
+ * Template Name: Newslist
  * @package CEBA
  */
 
