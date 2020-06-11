@@ -1,0 +1,31 @@
+.documents-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 704px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  embed {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &.bylaws {
+    grid-template-columns: 1fr !important;
+
+    embed {
+      height: 700px;
+    }
+  }
+}
