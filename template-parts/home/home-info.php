@@ -7,10 +7,9 @@
 
 <section class="home-info">
   <div class="container">
-    <h2 class="home-info__title">Additional Information</h2><!-- /.home-info__title -->
+    <h2 class="home-info__title">Clarkston Estates, Inc. Park &amp; Beach</h2><!-- /.home-info__title -->
     <div class="home-info__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</p>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/clarkston-estates-beach-map.png" alt="Clarkston Estates Beach Map">
     </div><!-- /.home-info__text -->
   </div><!-- /.container -->
 </section><!-- /.home-info -->
